@@ -8,6 +8,7 @@
     android:layout_gravity="center"
     tools:context="com.example.idan.calculator.MainActivity">
 
+
     <EditText
         android:id="@+id/ett"
         android:layout_width="match_parent"

@@ -6,4 +6,5 @@
     android:layout_height="match_parent"
     tools:context="com.example.idan.calculator.Main2Activity">
 
+
 </android.support.constraint.ConstraintLayout>
