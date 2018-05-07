@@ -11,8 +11,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     Button pl, min, tm, dvd, cl, ans, crd;
     EditText et;
-    double x1 = 0, x2 = 0;
-    int op, sum = 0;
+    double x1 = 0, x2 = 0,b;
+    int op = 1;
     String str;
 
 
@@ -175,9 +175,19 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Input is unavailable", Toast.LENGTH_SHORT).show();
         }
+        b=x1;
+        x2=x1=0; op=1;
     }
     public void credits(View view) {
-        Intent b= new Intent(this,MainActivity.class);
-        startActivity(b);
+        Intent c= new Intent(this,MainActivity.class);
+        if (x1==0){
+            str=Double.toString(b);
+            c.putExtra("result", str);
+        }
+        else{
+            str=Double.toString(x1);
+            c.putExtra("result", str);
+        }
+        startActivity(c);
     }
 }
