@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 public class Main2Activity extends AppCompatActivity {
 TextView a;
 Button r;

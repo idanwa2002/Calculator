@@ -46,14 +46,14 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case 4:
                     if (x2 == 0)
-                        Toast.makeText(this, "error (0)", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
                     x1 = x1 / x2;
                     break;
             }
             str = Double.toString(x1);
             et.setHint(str);
         } else {
-            Toast.makeText(this, "input is unavailable", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "You need to enter a number first", Toast.LENGTH_SHORT).show();
         }
         op = 1;
     }
@@ -74,14 +74,14 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case 4:
                     if (x2 == 0)
-                        Toast.makeText(this, "error (0)", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
                     x1 = x1 / x2;
                     break;
             }
             str = Double.toString(x1);
             et.setHint(str);
         } else {
-            Toast.makeText(this, "Input is unavailable", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "You need to enter a number first", Toast.LENGTH_SHORT).show();
         }
         op = 2;
     }
@@ -102,14 +102,14 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case 4:
                     if (x2 == 0)
-                        Toast.makeText(this, "error (0)", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
                     x1 = x1 / x2;
                     break;
             }
             str = Double.toString(x1);
             et.setHint(str);
         } else {
-            Toast.makeText(this, "Input is unavailable", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "You need to enter a number first", Toast.LENGTH_SHORT).show();
         }
         op = 3;
     }
@@ -130,14 +130,14 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case 4:
                     if (x2 == 0)
-                        Toast.makeText(this, "error (0)", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
                     x1 = x1 / x2;
                     break;
             }
             str = Double.toString(x1);
             et.setHint(str);
         } else {
-            Toast.makeText(this, "Input is unavailable", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "You need to enter a number first", Toast.LENGTH_SHORT).show();
         }
         op = 4;
     }
@@ -166,14 +166,14 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case 4:
                     if (x2 == 0)
-                        Toast.makeText(this, "error (0)", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
                     x1 = x1 / x2;
                     break;
             }
             str = Double.toString(x1);
             et.setHint(str);
         } else {
-            Toast.makeText(this, "Input is unavailable", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "You need to enter a number first", Toast.LENGTH_SHORT).show();
         }
         b=x1;
         x2=x1=0; op=1;
