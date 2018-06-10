@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     EditText et;
     double x1 = 0, x2 = 0,b;
     int op = 1;
-    String str;
+    String str, ret;
 
 
     @Override
@@ -179,15 +179,19 @@ public class MainActivity extends AppCompatActivity {
         x2=x1=0; op=1;
     }
     public void credits(View view) {
-        Intent c= new Intent(this,MainActivity.class);
+        Intent t= new Intent(this,MainActivity.class);
         if (x1==0){
             str=Double.toString(b);
-            c.putExtra("result", str);
+            t.putExtra("str", str);
         }
         else{
             str=Double.toString(x1);
-            c.putExtra("result", str);
+            t.putExtra("str", str);
         }
-        startActivity(c);
+        startActivityForResult(t,1); }
+        public void onActivityResult (int a, int b, Intent c){
+            ret=c.getStringExtra("re");
+            et.setText("The last result is" + ret);
     }
-}
+    }
+
